@@ -48,7 +48,7 @@ initArgs() {
 	APP="$1"
 	NAME=""
 
-	if [ $START == "pm2" ]
+	if [ $START ?? "pm2" ]
 	then
 		NAME="--name $APP"
 	fi
